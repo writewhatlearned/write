@@ -1,6 +1,8 @@
 from django.urls import path
 from ninja import NinjaAPI
-app_name = 'write_future\wx_minipro'
+
+
+app_name = 'wx_minipro'
 
 urlpatterns = [
 
