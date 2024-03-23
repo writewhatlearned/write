@@ -13,7 +13,7 @@ def visit_process(request: HttpRequest) -> dict:
     else:
         ip = request.META.get('REMOTE_ADDR')  # None
 
-    time_delta = timezone.now() - timedelta(seconds=2)
+    time_delta = timezone.now() - timedelta(hours=2)
 
     visited = Visit.objects.filter(ip=ip).filter(visit_time__gte=time_delta)
 
